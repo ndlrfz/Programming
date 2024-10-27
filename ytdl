@@ -1,0 +1,31 @@
+#Enter video URL
+#check available format in number
+#input number video and audio
+#input video format
+#download video and merge to mkv
+
+# put this in your PATH directory and run the command
+
+extract_video () {
+	yt-dlp -F $1
+}
+
+download_video () {
+	yt-dlp -f $1 $2 $3 $4
+}
+
+yt_opts="--merge-output-format"
+
+echo "Enter video URL:: "
+read url_video
+extract_video $url_video
+
+echo "Enter video and audio ids [123+456]::"
+read av_ids
+
+echo "Enter video format mkv/mp4::"
+read format_video
+
+download_video $av_ids $yt_opts $format_video $url_video
+
+echo "Download complete!"
