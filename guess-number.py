@@ -11,7 +11,7 @@ Guess the number with random module
 8. If `my_guess` == `num` (the correct random number), the success message will be shown and the program exit with `break`
 9. if the `guess_counter` is greater than (>) `chances` AND `my_guess` is not the same as `num` (the random number), error Sorry and timout will be shown
 10. if `my_guess` is greater than `num`, the `too high` message will be shown
-11. if `my_guess` is smaller than `num`, the `too low` message will be shown
+11. if `my_guess` is smaller than `num`, the `too low` message will be show
 """
 
 import random
