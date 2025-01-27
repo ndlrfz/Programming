@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Counter</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Counter</h1>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Counter in JavaScript</title>
-</head>
+      <div class="counter">
+        <p id="count">0</p>
+      </div>
+      <div>
+        <button onclick="inc()">INCREASE</button>
+        <button onclick="dec()">DECREASE</button>
+        <button onclick="reset()">RESET</button>
+      </div>
 
-<body>
-  <h2 id="countLabel">0</h2>
+    </div>
 
-  <div id="mainButton">
-    <button id="decButton" class="button">DECREASE</button>
-    <button id="resButton" class="button">RESET</button>
-    <button id="incButton" class="button">INCREASE</button>
-  </div>
-
-  <script type="application/javascript" src="index.js"></script>
-</body>
-
+    <script defer="" src="index.js"></script>
+  </body>
 </html>
