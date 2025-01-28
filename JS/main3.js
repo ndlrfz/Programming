@@ -339,7 +339,7 @@ function range(start, end) {
 console.log(range(1, 100));
 
 // reverse an array with the reverse(); method
-let revArray = range(1, 10);
+let revArray = range(1, 100);
 console.log(revArray.reverse());
 
 // create function reverseArray to reverse array via reverse();
