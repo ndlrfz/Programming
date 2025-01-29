@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <!--body-->
+        <!--div container-->
+        <!--    title h1-->
+        <!--    paragraph-->
+        <!--    form-->
+        <!--        3 input untuk nama, email, nomor-->
+        <!--        dropdow menu 3 item-->
+        <!--        radio choice 3 item-->
+        <!--        checkbox 3 item-->
+        <!--        textarea untuk comment-->
+        <!--        submit button-->
+        <!--footer-->
+        <div class="container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please enter your details and comment.</p>
+            <form action="" id="survey-form">
+                <fieldset>
+                    <div>
+                        <label id="name-label" for="name">Full Name:</label><br>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label id="email-label" for="email">Email Address</label><br>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label id="number-label" for="number">ID Number:</label><br>
+                     <input type="number" id="number" name="number" placeholder="15" min="15" max="30" pattern="[0-9]{7}">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <p>Do you like FreeCodeCamp?</p>
+                    <label> 
+                        <select id="dropdown">
+ <option value="">Select</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <p>Do you recommend FreeCodeCamp to your friends?</p>
+                    <label for="yes" class="inline"><input class="recom" type="radio" name="recom" id="yes" checked>Yes</label><br>
+                    <label for="no"><input class="recom" type="radio" name="recom" id="no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <p>How you Rate FreeCodeCamp?</p>
+                    <label><input type="checkbox" name="rate" value="low">50-60 Meh</label><br>
+                    <label><input type="checkbox" name="rate" value="medium">60-70 Medium</label><br>
+                    <label><input type="checkbox" name="rate" value="good">70-80 Good</label><br>
+                    <label><input type="checkbox" name="rate" value="excellent">80-90 Excellent</label><br>
+                    <label><input type="checkbox" name="rate" value="superb">90-100 Superb</label>
+                </fieldset>
+                
+                <fieldset>
+                    <p>Suggestion:</p>
+                    <label>
+                        <textarea id="suggestion" name="suggestion" rows="5" cols="72" placeholder="Write your suggestions or critics here.."></textarea>
+                    </label>
+                </fieldset>
+
+                <input id="submit" name="submit" type="submit" value="SUBMIT">
+            </form>
+                    <footer>
+            <p>Reserved: <a href="https://github.com/ndlrfz" target="_blank">ndlrfz</a></p>
+        </footer>
+        </div>
+
+    </body>
+</html>
