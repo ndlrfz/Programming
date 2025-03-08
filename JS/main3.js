@@ -348,3 +348,62 @@ function reveseArray(array) {
 }
 
 console.log(reveseArray([1, 2, 3, 4, 5, "Mangga", "Pisang", "Jambu"]));
+
+// Abstraction: ability to talk and analyze about problems at higher-level and without uninteresting details
+
+// create two variables total and count
+let total = 0,
+  count = 1;
+
+// loop until count <= 10
+// the action is replace total = total + count
+// first: 0 + 1 = 1 (replace the total value to 1 inside function)
+// second: 1 + 2 = 3 (replace the total value to 2 inside function)
+// 3 + 3 = 6
+// 6 + 4 = 10
+// 10 + 5 = 15
+// 15 + 6 = 21
+// 21 + 7 = 28
+// 28 + 8 = 36
+// 36 + 9 = 45
+// 45 + 10 = 55
+// througgh the end, the value should become: 45 + 10
+while (count <= 10) {
+  total = total + count; // or total += count
+  count = count + 1; // or count += 1
+}
+
+console.log(total);
+
+function sum(num1, num2) {
+  console.log(num1 + num2);
+}
+
+sum(10, 20);
+
+console.log(sum(range(1, 10)));
+
+// high-order function
+function greaterThan(n) {
+  return (m) => m > n;
+}
+
+// greaterThan10 variable hold the first greaterThan(10) function
+// greaterthan10 used new function
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(12));
+
+// method is basically a function that represent an object
+// create method called speak
+function speak(line) {
+  console.log(`The ${this.type} rabbit says '${line}'`);
+}
+
+// object whiteRabbit and hungryRabbit
+let whiteRabbit = { type: "white", speak };
+let hungryRabbit = { type: "hungry", speak };
+
+// calling object with method
+// whiteRabbit.speak and hungryRabbit.speak
+whiteRabbit.speak("Oh my darling and kids");
+hungryRabbit.speak("Where is my food, I'm hungry");
