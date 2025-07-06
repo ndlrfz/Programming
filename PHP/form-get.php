@@ -8,8 +8,7 @@
     </head>
     <body>
 
-    <!--process the form data to processingform.php via post method-->
-<form action="processingform.php" method="post">
+<form action="processingform-get.php" method="get">
    <fieldset>
      <legend>Personal information:</legend>
      <label for="lastname">Last Name:</label><br>
